@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="smooth-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de Educação Ambiental do IFCE voltado à conscientização sobre os ecossistemas de Camocim e a importância da preservação dos ambientes costeiros e marinhos.">
+    <meta name="keywords" content="educação ambiental, Camocim, IFCE, preservação marinha, manguezais, restingas">
+    <meta name="author" content="IFCE Campus Camocim - Gestão Ambiental">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Camocim Consciente - Educação Ambiental em Ação">
+    <meta property="og:description" content="Promovendo a Cultura Oceânica no Município de Camocim-CE através de placas educativas sobre preservação dos ecossistemas costeiros e marinhos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camocim Consciente - Educação Ambiental">
+    <meta name="twitter:description" content="Projeto de preservação dos ecossistemas costeiros e marinhos de Camocim-CE">
+    
+    <title>Camocim Consciente - Educação Ambiental em Ação | IFCE</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --verde-sustentavel: #58A76A;
+            --azul-marinho: #1B4965;
+            --bege-areia: #F4EBD0;
+            --verde-escuro: #2D5F3F;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8fafc; /* A light gray background as a base */
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .bg-verde-sustentavel {
+            background-color: var(--verde-sustentavel);
+        }
+        
+        .bg-azul-marinho {
+            background-color: var(--azul-marinho);
+        }
+        
+        .bg-bege-areia {
+            background-color: var(--bege-areia);
+        }
+        
+        .text-verde-sustentavel {
+            color: var(--verde-sustentavel);
+        }
+        
+        .text-azul-marinho {
+            color: var(--azul-marinho);
+        }
+        
+        .text-verde-escuro {
+            color: var(--verde-escuro);
+        }
+
+        .border-verde-sustentavel {
+            border-color: var(--verde-sustentavel);
+        }
+
+        .border-azul-marinho {
+            border-color: var(--azul-marinho);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(27, 73, 101, 0.95) 0%, rgba(88, 167, 106, 0.9) 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .fade-in-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 640px) {
+            .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

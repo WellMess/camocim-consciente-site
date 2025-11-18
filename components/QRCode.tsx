@@ -32,7 +32,7 @@ const QRCode: React.FC = () => {
                             <div className="flex justify-center">
                                 <div className="bg-white p-6 rounded-xl shadow-lg">
                                     <img 
-                                        src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://camocim-consciente.exemplo.com" 
+                                        src="/new_qrcode.png" 
                                         alt="QR Code Exemplo" 
                                         className="w-64 h-64"
                                         loading="lazy"

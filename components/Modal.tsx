@@ -18,7 +18,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
         >
             <div className="flex items-center justify-center min-h-screen p-4">
                 <div 
-                    className={`bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
+                    className={`bg-white rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`} // Reduzido para max-w-xl para formato mais vertical
                     onClick={e => e.stopPropagation()}
                 >
                     <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center z-10">
@@ -29,13 +29,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                             <i className="fas fa-times"></i>
                         </button>
                     </div>
-                    <div className="p-8">
-                         <div className="mb-6">
-                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain rounded-lg shadow-lg mb-6" style={{ maxHeight: '70vh' }}/>
+                    <div className="pt-0"> // Removido padding superior e lateral para a imagem
+                         <div className="mb-0"> // Removido margin-bottom do container da imagem
+                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0" style={{ maxHeight: '70vh' }}/> // Removido rounded-lg e shadow-lg para maximizar a área, e mb-6
                             {/* Citação (quote) removida conforme solicitação do usuário. */}
                         </div>
                         {/* Conteúdo de texto removido conforme solicitação do usuário. Agora exibe apenas a imagem. */}
-                        <div className="mt-8 pt-6 border-t border-gray-200">
+                        <div className="mt-8 pt-6 border-t border-gray-200 p-8"> // Adicionado padding para o botão de fechar
                             <button onClick={onClose} className="bg-azul-marinho hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition">
                                 <i className="fas fa-times mr-2"></i>Fechar
                             </button>

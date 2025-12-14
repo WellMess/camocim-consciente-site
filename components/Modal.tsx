@@ -29,13 +29,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                             <i className="fas fa-times"></i>
                         </button>
                     </div>
-                    <div className="pt-0"> // Removido padding superior e lateral para a imagem
-                         <div className="mb-0"> // Removido margin-bottom do container da imagem
-                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0" style={{ maxHeight: '70vh' }}/> // Removido rounded-lg e shadow-lg para maximizar a área, e mb-6
-                            {/* Citação (quote) removida conforme solicitação do usuário. */}
+                    <div className="p-0">
+                         <div className="mb-0">
+                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0" style={{ maxHeight: '70vh' }}/>
+                            
                         </div>
-                        {/* Conteúdo de texto removido conforme solicitação do usuário. Agora exibe apenas a imagem. */}
-                        <div className="mt-8 pt-6 border-t border-gray-200 p-8"> // Adicionado padding para o botão de fechar
+                        
+                        <div className="mt-8 pt-6 border-t border-gray-200 p-8">
                             <button onClick={onClose} className="bg-azul-marinho hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition">
                                 <i className="fas fa-times mr-2"></i>Fechar
                             </button>

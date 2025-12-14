@@ -31,16 +31,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                     </div>
                     <div className="p-8">
                          <div className="mb-6">
-                            <img src={theme.image} alt={theme.title} className="w-full h-64 object-cover rounded-lg shadow-lg mb-6"/>
-                            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg border-l-4 border-verde-sustentavel mb-6">
-                                <p className="text-xl md:text-2xl font-semibold text-gray-800 italic">
-                                    <i className="fas fa-quote-left text-verde-sustentavel mr-2"></i>
-                                    {theme.quote}
-                                    <i className="fas fa-quote-right text-verde-sustentavel ml-2"></i>
-                                </p>
-                            </div>
+                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain rounded-lg shadow-lg mb-6" style={{ maxHeight: '70vh' }}/>
+                            {/* Citação (quote) removida conforme solicitação do usuário. */}
                         </div>
-                        <div dangerouslySetInnerHTML={{ __html: theme.content }} />
+                        {/* Conteúdo de texto removido conforme solicitação do usuário. Agora exibe apenas a imagem. */}
                         <div className="mt-8 pt-6 border-t border-gray-200">
                             <button onClick={onClose} className="bg-azul-marinho hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition">
                                 <i className="fas fa-times mr-2"></i>Fechar

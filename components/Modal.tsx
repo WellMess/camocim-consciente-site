@@ -18,7 +18,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
         >
             <div className="flex items-center justify-center min-h-screen p-4">
                 <div 
-                    className={`bg-white rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`} // Reduzido para max-w-xl para formato mais vertical
+                    className={`bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`} // Aumentado para max-w-2xl para melhor visualização da imagem
                     onClick={e => e.stopPropagation()}
                 >
                     <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center z-10">
@@ -31,7 +31,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                     </div>
                     <div className="p-0">
                          <div className="mb-0">
-                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0" style={{ maxHeight: '70vh' }}/>
+                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0"/> // Removido maxHeight para permitir que a imagem se expanda e o modal use a barra de rolagem
                             
                         </div>
                         

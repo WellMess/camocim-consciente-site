@@ -6,13 +6,14 @@ interface ThemesProps {
 }
 
 const themeCards = [
-    { id: 'tema7', icon: 'fa-ban', title: 'NÃO COMPRE PESCADOS PROIBIDOS', image: '/images/novo_tema_nao_compre_pescados_proibidos.png', description: 'Imagem do tema: NÃO COMPRE PESCADOS PROIBIDOS' },
-    { id: 'tema1', icon: 'fa-trash-alt', title: 'Impactos dos Resíduos', image: '/images/impactos_residuos_ambiente.png', description: 'Imagem do tema: Impactos dos Resíduos no Ambiente' },
-    { id: 'tema2', icon: 'fa-mountain', title: 'Preservação das Restingas', image: '/images/preservacao_restingas.png', description: 'Imagem do tema: Preservação das Restingas' },
-    { id: 'tema3', icon: 'fa-water', title: 'Estuários e Manguezais', image: '/images/preservacao_estuarios_manguezais.png', description: 'Imagem do tema: Preservação dos Estuários e Manguezais' },
-    { id: 'tema4', icon: 'fa-spider', title: 'Caranguejo-Uçá', image: '/images/conservacao_caranguejo_uca.png', description: 'Imagem do tema: Conservação do Caranguejo-Uçá' },
-    { id: 'tema5', icon: 'fa-gem', title: 'Proteção dos Eolianitos', image: '/images/protecao_eolianitos.png', description: 'Imagem do tema: Proteção dos Eolianitos' },
-    { id: 'tema6', icon: 'fa-fish', title: 'Conchas e Animais', image: '/images/combate_levar_conchas_animais.png', description: 'Imagem do tema: Combate ao Hábito de Levar Conchas e Animais' },
+    { id: 'tema7', icon: 'fa-ban', title: 'NÃO COMPRE PESCADOS PROIBIDOS', image: '/images/thumbnails/capa_tema7_nao_compre.png', description: 'Imagem do tema: NÃO COMPRE PESCADOS PROIBIDOS' },
+
+    { id: 'tema1', icon: 'fa-trash-alt', title: 'Impactos dos Resíduos', image: '/images/thumbnails/capa_tema1_residuos.png', description: 'Imagem do tema: Impactos dos Resíduos no Ambiente' },
+    { id: 'tema2', icon: 'fa-mountain', title: 'Preservação das Restingas', image: '/images/thumbnails/capa_tema2_restingas.png', description: 'Imagem do tema: Preservação das Restingas' },
+    { id: 'tema3', icon: 'fa-water', title: 'Estuários e Manguezais', image: '/images/thumbnails/capa_tema3_estuarios.png', description: 'Imagem do tema: Preservação dos Estuários e Manguezais' },
+    { id: 'tema4', icon: 'fa-spider', title: 'Caranguejo-Uçá', image: '/images/thumbnails/capa_tema4_caranguejo.png', description: 'Imagem do tema: Conservação do Caranguejo-Uçá' },
+    { id: 'tema5', icon: 'fa-gem', title: 'Proteção dos Eolianitos', image: '/images/thumbnails/capa_tema5_eolianitos.png', description: 'Imagem do tema: Proteção dos Eolianitos' },
+    { id: 'tema6', icon: 'fa-fish', title: 'Conchas e Animais', image: '/images/thumbnails/capa_tema6_conchas.png', description: 'Imagem do tema: Combate ao Hábito de Levar Conchas e Animais' },
 ];
 
 const Themes: React.FC<ThemesProps> = ({ onThemeSelect }) => {

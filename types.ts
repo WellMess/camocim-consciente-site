@@ -4,6 +4,7 @@ export interface ThemeData {
     icon: string;
     color: string;
     image: string;
+    thumbnailImage: string;
     quote: string;
     content: string;
 }

@@ -6,7 +6,7 @@ interface ThemesProps {
 }
 
 
-
+const themeCards = [
     { id: 'tema1', icon: 'fa-trash-alt', title: 'Impactos dos Resíduos', image: '/images/thumbnails/capa_tema3_estuarios.png', description: 'Imagem do tema: Impactos dos Resíduos no Ambiente' },
     { id: 'tema2', icon: 'fa-mountain', title: 'Preservação das Restingas', image: '/images/thumbnails/capa_tema6_conchas.png', description: 'Imagem do tema: Preservação das Restingas' },
     { id: 'tema3', icon: 'fa-water', title: 'Estuários e Manguezais', image: '/images/thumbnails/capa_tema4_caranguejo.png', description: 'Imagem do tema: Preservação dos Estuários e Manguezais' },

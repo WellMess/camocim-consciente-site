@@ -31,7 +31,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, theme }) => {
                     </div>
                     <div className="p-0">
                          <div className="mb-0">
-                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0"/> // Removido maxHeight para permitir que a imagem se expanda e o modal use a barra de rolagem
+                            <img src={theme.image} alt={theme.title} className="w-full h-auto object-contain mb-0"/>
                             
                         </div>
                         

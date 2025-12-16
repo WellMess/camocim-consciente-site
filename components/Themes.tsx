@@ -14,9 +14,9 @@ const themeCards = [
     { id: 'tema5', icon: 'fa-gem', title: 'Proteção dos Eolianitos', image: '/images/thumbnails/capa_tema5_eolianitos.png', description: 'Imagem do tema: Proteção dos Eolianitos' },
     { id: 'tema6', icon: 'fa-fish', title: 'Conchas e Animais', image: '/images/thumbnails/capa_tema2_restingas.png', description: 'Imagem do tema: Combate ao Hábito de Levar Conchas e Animais' },
     // Placeholders para centralizar o último item
-    { id: 'placeholder_left', icon: 'fa-leaf', title: '', image: '/images/placeholders/placeholder_left.png', description: '' },
+    { id: 'placeholder_left', icon: 'fa-recycle', title: 'Reciclagem', image: '', description: '' },
     { id: 'tema7', icon: 'fa-ban', title: 'NÃO COMPRE PESCADOS PROIBIDOS', image: '/images/thumbnails/capa_tema7_nao_compre.png', description: 'Imagem do tema: NÃO COMPRE PESCADOS PROIBIDOS' },
-    { id: 'placeholder_right', icon: 'fa-water', title: '', image: '/images/placeholders/placeholder_right.png', description: '' },
+    { id: 'placeholder_right', icon: 'fa-tree', title: 'Natureza', image: '', description: '' },
 ];
 
 const Themes: React.FC<ThemesProps> = ({ onThemeSelect }) => {
@@ -42,20 +42,27 @@ const Themes: React.FC<ThemesProps> = ({ onThemeSelect }) => {
                                 className={`bg-white rounded-xl shadow-lg overflow-hidden ${isPlaceholder ? 'hidden lg:flex items-center justify-center' : 'card-hover cursor-pointer'}`} 
                                 onClick={() => isClickable && onThemeSelect(card.id)}
                             >
-                                <div className="relative h-48">
-                                    <img src={card.image} alt={card.title} className={`w-full h-full object-cover ${isPlaceholder ? 'opacity-50' : ''}`} loading="lazy" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                                    <div className="absolute bottom-4 left-4 text-white">
-                                        <i className={`fas ${card.icon} text-3xl mb-2`}></i>
-                                        <h3 className="text-xl font-bold">{card.title}</h3>
+                                {isPlaceholder ? (
+                                    <div className="flex flex-col items-center justify-center h-full p-6">
+                                        <i className={`fas ${card.icon} text-6xl text-verde-sustentavel mb-4`}></i>
+                                        <h3 className="text-xl font-bold text-gray-700">{card.title}</h3>
                                     </div>
-                                </div>
-                                {!isPlaceholder && (
-                                    <div className="p-6">
-                                        <button className="text-verde-sustentavel font-semibold hover:underline">
-                                            Ver Imagem <i className="fas fa-arrow-right ml-2"></i>
-                                        </button>
-                                    </div>
+                                ) : (
+                                    <>
+                                        <div className="relative h-48">
+                                            <img src={card.image} alt={card.title} className="w-full h-full object-cover" loading="lazy" />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                                            <div className="absolute bottom-4 left-4 text-white">
+                                                <i className={`fas ${card.icon} text-3xl mb-2`}></i>
+                                                <h3 className="text-xl font-bold">{card.title}</h3>
+                                            </div>
+                                        </div>
+                                        <div className="p-6">
+                                            <button className="text-verde-sustentavel font-semibold hover:underline">
+                                                Ver Imagem <i className="fas fa-arrow-right ml-2"></i>
+                                            </button>
+                                        </div>
+                                    </>
                                 )}
                             </div>
                         )})}
